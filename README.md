@@ -8,14 +8,14 @@
 
 *Метрический алгоритм классификации* с обучающей выборкой Xl относит объект u к тому классу y ∈ Y , для которого суммарный вес ближайших обучающих объектов Γy(u, Xl) максимален:
 ![Image alt](https://github.com/temirkayaeva/ML0/raw/master/images/2.png)
-где весовая функция <img src="https://github.com/temirkayaeva/ML0/raw/master/images/3.png" width="35">  оценивает степень важности *i*-го соседа для классификации объекта *u*.
+где весовая функция <img src="https://github.com/temirkayaeva/ML0/raw/master/images/3.png" width="45">  оценивает степень важности *i*-го соседа для классификации объекта *u*.
 
  
 ## Алгоритм 1NN
 
-**Алгоритм ближайшего соседа - 1NN** (nearest neighbor, NN)  является самым простым алгоритмом классификации. Он относит классифицируемый объект <img src="https://github.com/temirkayaeva/ML0/raw/master/images/4.png" width="35"> к тому классу, которому принадлежит ближайший обучающий объект: <img src="https://github.com/temirkayaeva/ML0/raw/master/images/5.png" width="35"> 
+**Алгоритм ближайшего соседа - 1NN** (nearest neighbor, NN)  является самым простым алгоритмом классификации. Он относит классифицируемый объект <img src="https://github.com/temirkayaeva/ML0/raw/master/images/4.png" width="45"> к тому классу, которому принадлежит ближайший обучающий объект: <img src="https://github.com/temirkayaeva/ML0/raw/master/images/5.png" width="45"> 
 
-<img src="https://github.com/temirkayaeva/ML0/raw/master/images/1nn.png" width="600"> 
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/1nn.png" width="900"> 
 
 
   
