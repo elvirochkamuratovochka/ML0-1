@@ -11,9 +11,9 @@
 где весовая функция ![Image alt](https://github.com/temirkayaeva/ML0/raw/master/images/3.png) оценивает степень важности *i*-го соседа для классификации объекта *u*.
 
  
-## Алгоритм ближайшего соседа
+## Алгоритм 1NN
 
-**Алгоритм ближайшего соседа** (nearest neighbor, NN)  является самым простым алгоритмом классификации. Он относит классифицируемый объект ![Image alt](https://github.com/temirkayaeva/ML0/raw/master/images/4.png) к тому классу, которому принадлежит ближайший обучающий объект: ![Image alt](https://github.com/temirkayaeva/ML0/raw/master/images/5.png)
+**Алгоритм ближайшего соседа - 1NN** (nearest neighbor, NN)  является самым простым алгоритмом классификации. Он относит классифицируемый объект ![Image alt](https://github.com/temirkayaeva/ML0/raw/master/images/4.png) к тому классу, которому принадлежит ближайший обучающий объект: ![Image alt](https://github.com/temirkayaeva/ML0/raw/master/images/5.png)
   
 #### Достоинства метода
 
