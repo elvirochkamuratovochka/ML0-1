@@ -6,14 +6,13 @@
 Пусть на множестве объектов X задана функция расстояния *ρ: X × X → (0,∞)*.  Существует целевая зависимость y* :  X → Y, значения которой известны только на объектах обучающей выборки <img src="https://github.com/temirkayaeva/ML0/blob/master/images/03803ad3e8b46f76831df83fd1a51e98.png" width="230">
 Множество классов Y конечно. Требуется построить алгоритм классификации *a : X → Y* , аппроксимирующий целевую зависимость y*(x) на всём множестве X. Если мы выберем любой объект из X и расположим элементы обучающей выборки в порядке возрастания до этого элемента, то получим перенумерованную выборку: <img src="https://github.com/temirkayaeva/ML0/raw/master/images/1.png" width="35"> -  i-тый сосед объекта *u*.
 
-*Метрический алгоритм классификации* с обучающей выборкой Xl относит объект u к тому классу y ∈ Y , для которого суммарный вес ближайших обучающих объектов Γy(u, Xl) максимален:
-![Image alt](https://github.com/temirkayaeva/ML0/raw/master/images/2.png)
+*Метрический алгоритм классификации* с обучающей выборкой Xl относит объект u к тому классу y ∈ Y , для которого суммарный вес ближайших обучающих объектов Γy(u, Xl) максимален: <img src="https://github.com/temirkayaeva/ML0/raw/master/images/2.png" width="300"> 
 где весовая функция <img src="https://github.com/temirkayaeva/ML0/raw/master/images/3.png" width="45">  оценивает степень важности *i*-го соседа для классификации объекта *u*.
 
  
 ## Алгоритм 1NN
 
-**Алгоритм ближайшего соседа - 1NN** (nearest neighbor, NN)  является самым простым алгоритмом классификации. Он относит классифицируемый объект <img src="https://github.com/temirkayaeva/ML0/raw/master/images/4.png" width="45"> к тому классу, которому принадлежит ближайший обучающий объект: <img src="https://github.com/temirkayaeva/ML0/raw/master/images/5.png" width="45"> 
+**Алгоритм ближайшего соседа - 1NN** (nearest neighbor, NN)  является самым простым алгоритмом классификации. Он относит классифицируемый объект <img src="https://github.com/temirkayaeva/ML0/raw/master/images/4.png" width="45"> к тому классу, которому принадлежит ближайший обучающий объект: <img src="https://github.com/temirkayaeva/ML0/raw/master/images/5.png" width="100"> 
 
 <img src="https://github.com/temirkayaeva/ML0/raw/master/images/1nn.png" width="900"> 
 
