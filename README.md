@@ -45,6 +45,7 @@
 <img src="https://github.com/temirkayaeva/ML0/raw/master/images/loo2.png" width="400"> 
 
 <img src="https://github.com/temirkayaeva/ML0/raw/master/images/looo1.png" width="900">
+Оптимальное *k* = 6. 
 #### Достоинства метода
 
 * Простота реализации.
