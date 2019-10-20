@@ -32,7 +32,7 @@
 **В алгоритме k ближайших соседей - KNN** (k nearest neighbors) объекты классифицируются  путем *голосования* по *k* ближайшим соседям. Каждый из соседей <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn1.png" width="120">  голосует за отнесение
 объекта <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn2.png" width="15">  к своему классу <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn3.png" width="19">. Алгоритм относит объект  <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn2.png" width="15">  к тому классу, который
 наберёт большее число голосов:
-<img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn4.png" width="400"> 
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn4.png" width="350"> 
 
 
 #### Достоинства метода
@@ -48,7 +48,7 @@
 ### Оптимизация числа соседей k
 
 Оптимальное значение параметра *k* определяют по критерию скользящего контроля с *исключением объектов по одному* (leave-one-out, LOO).
- Для каждого объекта <img src="https://github.com/temirkayaeva/ML0/raw/master/images/loo1.png" width="100">  проверяется,
+ Для каждого объекта <img src="https://github.com/temirkayaeva/ML0/raw/master/images/loo1.png" width="70">  проверяется,
 правильно ли он классифицируется по своим *k* ближайшим соседям.
 
 <img src="https://github.com/temirkayaeva/ML0/raw/master/images/loo2.png" width="400"> 
