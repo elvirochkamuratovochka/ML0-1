@@ -34,6 +34,8 @@
 наберёт большее число голосов:
 <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn4.png" width="350"> 
 
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn.png" width="900"> 
+
 ### Оптимизация числа соседей k
 
 Оптимальное значение параметра *k* определяют по критерию скользящего контроля с *исключением объектов по одному* (leave-one-out, LOO).
