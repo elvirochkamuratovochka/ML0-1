@@ -59,6 +59,12 @@
 
 ## Алгоритм k взвешенных ближайших соседей
 
-В данном алгоритме вводится строго убывающая последовательность вещественных весов <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kwnn1.png" width="15">,  задающих вклад i-го соседа в классификацию:
-<img src="https://github.com/temirkayaeva/ML0/raw/master/images/kwnn2.png" width="400"> 
+В данном алгоритме вводится строго убывающая последовательность вещественных весов <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kwnn1.png" width="19">,  задающих вклад i-го соседа в классификацию:
 
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/kwnn2.png" width="350"> 
+
+#### Выбор последовательности
+
+* <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kwnn3.png" width="20"> — линейно убывающие веса; при данном выборе последовательности неоднозначности также могут возникать (например: классов два; первый и четвёртый сосед голосуют за класс 1, второй и третий — за класс 2; суммы голосов совпадают).
+
+* <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kwnn4.png" width="35"> —  экспоненциально убывающие веса (геометрическая прогрессия), *q* — параметр алгоритма. . Его можно подбирать по критерию LOO, аналогично числу соседей k.
