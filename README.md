@@ -14,7 +14,7 @@
 
 **Алгоритм ближайшего соседа - 1NN** (nearest neighbor, NN)  является самым простым алгоритмом классификации. Он относит классифицируемый объект <img src="https://github.com/temirkayaeva/ML0/raw/master/images/4.png" width="45"> к тому классу, которому принадлежит ближайший обучающий объект: <img src="https://github.com/temirkayaeva/ML0/raw/master/images/5.png" width="100">
 
-
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/1nn.png" width="900"> 
   
 #### Достоинства метода
 
