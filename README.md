@@ -65,6 +65,15 @@
 
 #### Выбор последовательности
 
-* <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kwnn3.png" width="80"> — линейно убывающие веса; при данном выборе последовательности неоднозначности также могут возникать (например: классов два; первый и четвёртый сосед голосуют за класс 1, второй и третий — за класс 2; суммы голосов совпадают).
+* <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kwnn3.png" width="90"> — линейно убывающие веса; при данном выборе последовательности неоднозначности также могут возникать (например: классов два; первый и четвёртый сосед голосуют за класс 1, второй и третий — за класс 2; суммы голосов совпадают).
 
-* <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kwnn4.png" width="80"> —  экспоненциально убывающие веса (геометрическая прогрессия), *q* — параметр алгоритма. . Его можно подбирать по критерию LOO, аналогично числу соседей k.
+* <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kwnn4.png" width="100"> —  экспоненциально убывающие веса (геометрическая прогрессия), *q* — параметр алгоритма. Его можно подбирать по критерию LOO, аналогично числу соседей k.
+
+## Метод парзеновского окна
+
+Ещё один способ задать веса соседям — определить  <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kwnn1.png" width="19"> как функцию  не от ранга соседа *i*, а как функцию от расстояния <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno1.png" width="19">. Для этого вводится  функция ядра  <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno2.png" width="15"> невозрастающую на <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno3.png" width="15"> и рассматривается алгоритм: 
+
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno4.png" width="350"> 
+
+
+
