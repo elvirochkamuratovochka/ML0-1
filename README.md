@@ -12,9 +12,7 @@
  
 ## Алгоритм 1NN
 
-**Алгоритм ближайшего соседа - 1NN** (nearest neighbor, NN)  является самым простым алгоритмом классификации. Он относит классифицируемый объект <img src="https://github.com/temirkayaeva/ML0/raw/master/images/4.png" width="45"> к тому классу, которому принадлежит ближайший обучающий объект: <img src="https://github.com/temirkayaeva/ML0/raw/master/images/5.png" width="100"> 
-
-<img src="https://github.com/temirkayaeva/ML0/raw/master/images/1nn.png" width="900"> 
+**Алгоритм ближайшего соседа - 1NN** (nearest neighbor, NN)  является самым простым алгоритмом классификации. Он относит классифицируемый объект <img src="https://github.com/temirkayaeva/ML0/raw/master/images/4.png" width="45"> к тому классу, которому принадлежит ближайший обучающий объект: <img src="https://github.com/temirkayaeva/ML0/raw/master/images/5.png" width="100">
 
 
   
@@ -29,10 +27,12 @@
 * Низкое качество классификации.
 * Приходится хранить всю выборку целиком.
 
-## Алгоритм k-ближайших соседей
+## Алгоритм KNN
 
-
-В случае использования метода для классификации объект присваивается тому классу, который является наиболее распространённым среди *k* соседей данного элемента, классы которых уже известны. В случае использования метода для регрессии, объекту присваивается среднее значение по *k* ближайшим к нему объектам, значения которых уже известны.
+**В алгоритме k ближайших соседей - KNN** (k nearest neighbors) объекты классифицируются  путем *голосования* по *k* ближайшим соседям. Каждый из соседей <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn1.png" width="100">  голосует за отнесение
+объекта <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn2.png" width="45">  к своему классу <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn3.png" width="45">. Алгоритм относит объект  <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn2.png" width="45">  к тому классу, который
+наберёт большее число голосов:
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn4.png" width="200"> 
 
 
 #### Достоинства метода
