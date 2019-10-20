@@ -1,25 +1,27 @@
 euclideanDistance <- function(u, v) {
   sqrt(sum((u - v)^2))
-}  ## Åâêëèäîâî ðàññòîÿíèå
+} ## Ð•Ð²ÐºÐ»Ð¸Ð´Ð¾Ð²Ð¾ Ñ€Ð°ÑÑÑ‚Ð¾ÑÐ½Ð¸Ðµ
 
-l <- dim(iris)[1] ## Âûáîðêà
+l <- dim(iris)[1] ## ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð²Ñ‹Ð±Ð¾Ñ€ÐºÐ¸
 
-knn <- function(iris_new, point, k){ ##Ïðèìåíÿåì ìåòîä kNN
+knn <- function(iris_new, point, k){ ##ÐŸÑ€Ð¸Ð¼ÐµÐ½ÑÐµÐ¼ Ð¼ÐµÑ‚Ð¾Ð´ kNN
+  
   xl <- iris_new[, 3:5]
   n <- dim(xl)[2] - 1 
   
-  distances <- matrix(NA, l, 2) ## Ìàòðèöà ðàññòîÿíèÿ
+  distances <- matrix(NA, l, 2) ## ÐœÐ°Ñ‚Ñ€Ð¸Ñ†Ð° Ñ€Ð°ÑÑÑ‚Ð¾ÑÐ½Ð¸Ñ
+
   for(i in 1:l) {
-    distances[i, ] <- c(i, euclideanDistance(xl[i, 1:n], point)) ## Ðàññòîÿíèå îò êëàññèôèöèðóåìîé òî÷êè äî îñòàëüíûõ òî÷åê âûáîðêè
+    distances[i, ] <- c(i, euclideanDistance(xl[i, 1:n], point))  ## Ð Ð°ÑÑÑ‚Ð¾ÑÐ½Ð¸Ðµ Ð¾Ñ‚ ÐºÐ»Ð°ÑÑÐ¸Ñ„Ð¸Ñ†Ð¸Ñ€ÑƒÐµÐ¼Ð¾Ð¹ Ñ‚Ð¾Ñ‡ÐºÐ¸ Ð´Ð¾ Ð¾ÑÑ‚Ð°Ð»ÑŒÐ½Ñ‹Ñ… Ñ‚Ð¾Ñ‡ÐµÐº Ð²Ñ‹Ð±Ð¾Ñ€ÐºÐ¸
   }
-  orderedxl <- xl[order(distances[ , 2]), ] ## Ñîðòèðîâêà
-  classes <- orderedxl[1:k, n + 1]  ## Ïîëó÷àåì êëàññû ïåðâûõ k ñîñåäåé
-  counts <- table(classes) ## Ñîñòàâëÿåì òàáëèöó âñòðå÷àåìîñòè êàæäîãî êëàññà
-  class <- names(which.max(counts)) ## Íàõîäèì êëàññ, êîòîðûé äîìèíèðóåò ñðåäè ïåðâûõ ñîñåäåé
+  orderedxl <- xl[order(distances[ , 2]), ] ## Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°
+  classes <- orderedxl[1:k, n + 1]   ## ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ ÐºÐ»Ð°ÑÑÑ‹ Ð¿ÐµÑ€Ð²Ñ‹Ñ… k ÑÐ¾ÑÐµÐ´ÐµÐ¹
+  counts <- table(classes) ## Ð¡Ð¾ÑÑ‚Ð°Ð²Ð»ÑÐµÐ¼ Ñ‚Ð°Ð±Ð»Ð¸Ñ†Ñƒ Ð²ÑÑ‚Ñ€ÐµÑ‡Ð°ÐµÐ¼Ð¾ÑÑ‚Ð¸ ÐºÐ°Ð¶Ð´Ð¾Ð³Ð¾ ÐºÐ»Ð°ÑÑÐ°
+  class <- names(which.max(counts)) ## ÐÐ°Ñ…Ð¾Ð´Ð¸Ð¼ ÐºÐ»Ð°ÑÑ, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð´Ð¾Ð¼Ð¸Ð½Ð¸Ñ€ÑƒÐµÑ‚ ÑÑ€ÐµÐ´Ð¸ Ð¿ÐµÑ€Ð²Ñ‹Ñ… ÑÐ¾ÑÐµÐ´ÐµÐ¹
   return (class)
 }
 
-plot(NULL, NULL, type = "l", xlim = c(0, 150), ylim = c(0, 1), main = "Ãðàôèê LOO(k)", xlab = 'k', ylab = 'LOO')
+plot(NULL, NULL, type = "l", xlim = c(0, 150), ylim = c(0, 1), main = "ÃƒÃ°Ã Ã´Ã¨Ãª LOO(k)", xlab = 'k', ylab = 'LOO')
 step <- 5
 Ox <- seq(from = 1, to = 150, by = step) 
 Oy <- c()
@@ -29,13 +31,13 @@ k_opt <- 1
 for(k in Ox) {
   error <- 0
   for(i in 1:l) {
-    iris_new <- iris[-i, ]  ## Âûáîðêà áåç i-ãî ýëåìåíòà
+    iris_new <- iris[-i, ] ## Ð’Ñ‹Ð±Ð¾Ñ€ÐºÐ° Ð±ÐµÐ· i-Ð³Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°
     point <- iris[i, 3:4]
-    if(knn(iris_new, point, k) != iris[i, 5]) { ## Åñëè àëãîðèòì îøèáñÿ, òî ñ÷åò÷èê îøèáîê óâåëè÷èòü íà 1
+    if(knn(iris_new, point, k) != iris[i, 5]) { ## Ð•ÑÐ»Ð¸ Ð°Ð»Ð³Ð¾Ñ€Ð¸Ñ‚Ð¼ Ð¾ÑˆÐ¸Ð±ÑÑ, Ñ‚Ð¾ ÑÑ‡ÐµÑ‚Ñ‡Ð¸Ðº Ð¾ÑˆÐ¸Ð±Ð¾Ðº ÑƒÐ²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÑŒ Ð½Ð° 1
       error <- error + 1
     } 
   }
-  LOO <- error/l ## l - êîëè÷åñòâî ýëåìåíòîâ â âûáîðêå
+  LOO <- error/l 
   Oy <- c(Oy, LOO)
   
   if(LOO < LOO_opt) {
