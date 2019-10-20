@@ -30,9 +30,9 @@
 ## Алгоритм KNN
 
 **В алгоритме k ближайших соседей - KNN** (k nearest neighbors) объекты классифицируются  путем *голосования* по *k* ближайшим соседям. Каждый из соседей <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn1.png" width="100">  голосует за отнесение
-объекта <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn2.png" width="45">  к своему классу <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn3.png" width="45">. Алгоритм относит объект  <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn2.png" width="45">  к тому классу, который
+объекта <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn2.png" width="20">  к своему классу <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn3.png" width="45">. Алгоритм относит объект  <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn2.png" width="20">  к тому классу, который
 наберёт большее число голосов:
-<img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn4.png" width="200"> 
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/knn4.png" width="600"> 
 
 
 #### Достоинства метода
