@@ -80,7 +80,7 @@
 
 <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno4.png" width="350"> 
 
-Параметр *h* называется шириной окна и играет примерно ту же роль, что и число соседей *k*. "Окно" — это сферическая окрестность объекта *u* радиуса *h*, при попадании в которую обучающий объект <img src="https://github.com/temirkayaeva/ML0/raw/master/images/loo1.png" width="60"> "голосует" за отношение объекта *u* к классу <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno6.png" width="20">. Параметр *h* можно задавать или определять по скользящему контролю (LOO). 
+Параметр *h* называется шириной окна и играет примерно ту же роль, что и число соседей *k*. "Окно" — это сферическая окрестность объекта *u* радиуса *h*, при попадании в которую обучающий объект <img src="https://github.com/temirkayaeva/ML0/raw/master/images/loo1.png" width="60"> "голосует" за отношение объекта *u* к классу <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno6.png" width="16">. Параметр *h* можно задавать или определять по скользящему контролю (LOO). 
 
 Обучающие объекты  могут быть неравномерно распределены по пространству *X*. В окрестности одних объектов может оказываться очень много соседей, а в окрестности других — ни одного. В этих случаях применяется *окно переменной ширины*: 
 
@@ -88,6 +88,6 @@
 
 ## Метод потенциальных функций
 
-Ядро помещается в каждый обучающий объект <img src="https://github.com/temirkayaeva/ML0/raw/master/images/loo1.png" width="60">  и "притягивает" объект *u*
+Ядро помещается в каждый обучающий объект <img src="https://github.com/temirkayaeva/ML0/raw/master/images/loo1.png" width="60">  и "притягивает" объект *u* к классу <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno6.png" width="16">
 
 <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno5.png" width="400"> 
