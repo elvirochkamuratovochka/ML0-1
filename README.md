@@ -88,6 +88,6 @@
 
 ## Метод потенциальных функций
 
-Ядро помещается в каждый обучающий объект <img src="https://github.com/temirkayaeva/ML0/raw/master/images/loo1.png" width="60">  и "притягивает" объект *u* к классу <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno6.png" width="16">, если он попадает в его окрестность радиуса <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunction.png" width="16">
+Ядро помещается в каждый обучающий объект <img src="https://github.com/temirkayaeva/ML0/raw/master/images/loo1.png" width="60">  и "притягивает" объект *u* к классу <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno6.png" width="16">, если он попадает в его окрестность радиуса <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions.png" width="16">
 
-<img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunction1.png" width="400"> 
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions1.png" width="400"> 
