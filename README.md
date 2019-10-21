@@ -92,4 +92,22 @@
 
 <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions.png" width="400"> 
 
-Идея метода: если обучающий объект  <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions2.png" width="16"> класси-фицируется неверно, то потенциал класса <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno6.png" width="16"> недостаточен в точке <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions2.png" width="16"> 
+**Идея метода**: если обучающий объект  <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions2.png" width="16"> классифицируется неверно, то потенциал класса <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno6.png" width="16"> недостаточен в точке <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions2.png" width="16">, и вес <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions3.png" width="16"> увеличивается на единицу. 
+
+#### Достоинства метода
+
+* Эффективность (когда обучающие объекты поступают потоком, и хранить их в памяти нет возможности или необходимости)
+
+#### Недостатки метода
+
+* Недленно сходится
+
+* Результат обучения зависит от порядка предъявления объектов
+
+*  Слишком грубо (с шагом 1) настраиваются веса <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions3.png" width="16"> 
+
+* Не настраиваются параметры <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions2.png" width="16">
+
+Следовательно,  данный алгоритм не может похвастаться высоким качеством классификации.
+
+
