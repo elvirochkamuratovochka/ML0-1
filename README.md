@@ -86,5 +86,7 @@
 
 <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno5.png" width="350"> 
 
+## Метод потенциальных функций
 
-
+Если в методе парзеновского окна в центр окна поместить в классифицируемый объект, то получим метод потенциальных функций. 
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno5.png" width="350"> 
