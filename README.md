@@ -88,6 +88,6 @@
 
 ## Метод потенциальных функций
 
-Если в методе парзеновского окна в центр окна поместить в классифицируемый объект, то получим метод потенциальных функций. 
+Ядро помещается в каждый обучающий объект <img src="https://github.com/temirkayaeva/ML0/raw/master/images/loo1.png" width="60">  и "притягивает" объект *u*
 
 <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno5.png" width="400"> 
