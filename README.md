@@ -106,7 +106,7 @@
 
 *  Слишком грубо (с шагом 1) настраиваются веса <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions3.png" width="16"> 
 
-* Не настраиваются параметры <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions2.png" width="16">
+* Не настраиваются параметры <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions1.png" width="15">
 
 Следовательно,  данный алгоритм не может похвастаться высоким качеством классификации.
 
