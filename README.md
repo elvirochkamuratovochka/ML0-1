@@ -70,6 +70,13 @@
 
 * <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kwnn4.png" width="100"> —  экспоненциально убывающие веса (геометрическая прогрессия), *q* — параметр алгоритма. Его можно подбирать по критерию LOO, аналогично числу соседей k.
 
+### Сравнение методов KNN и KWNN
+
+| Карта классификации KNN  | Карта классификации KWNN |
+| ------------- | ------------- |
+| <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knnmap.png" width="400">  | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kwnn.png" width="400">  |
+
+
 ## Метод парзеновского окна
 
 Ещё один способ задать веса соседям — определить  <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kwnn1.png" width="19"> как функцию  не от ранга соседа *i*, а как функцию от расстояния <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno1.png" width="60">. Для этого вводится  функция ядра  <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno2.png" width="28"> невозрастающую на <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno3.png" width="28"> и рассматривается алгоритм: 
