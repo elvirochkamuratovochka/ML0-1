@@ -70,6 +70,9 @@
 
 * <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kwnn4.png" width="100"> —  экспоненциально убывающие веса (геометрическая прогрессия), *q* — параметр алгоритма. Его можно подбирать по критерию LOO, аналогично числу соседей k.
 
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/lookwnn.png" width="900"> 
+Оптимальное q = 1, k = 6. 
+
 ### Сравнение методов KNN и KWNN
 
 | Карта классификации KNN  | Карта классификации KWNN |
