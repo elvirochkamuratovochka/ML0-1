@@ -79,6 +79,10 @@
 | ------------- | ------------- |
 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/knnmap.png" width="400">  | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kwnn.png" width="400">  |
 
+Из-за того, что алгоритм k взвешенных ближайших соседей учитывает порядок объектов при классификации, он выдаёт лучший результат, чем алгоритм k ближайших соседей (kNN). 
+
+**Пример, показывающий	преимущество	метода kwNN над KNN:**
+
 
 ## Метод парзеновского окна
 
