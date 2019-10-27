@@ -99,9 +99,9 @@
 
 **Виды ядер** 
 
-| Ядро <img src="https://github.com/temirkayaeva/ML0/raw/master/images/k0.png" width="30"> | Формула |
+| Ядро <img src="https://github.com/temirkayaeva/ML0/raw/master/images/k0.gif" width="30"> | Формула |
 | ------------- | ------------- |
-| Епанечникова	 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/k1.png" width="200">  |
+| Епанечникова	 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/k1.gif" width="200">  |
 
 
 ## Метод потенциальных функций
