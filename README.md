@@ -97,6 +97,13 @@
 
 <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno5.png" width="350"> 
 
+**Виды ядер** 
+
+| Ядро <img src="https://github.com/temirkayaeva/ML0/raw/master/images/k0.png" width="30"> | Формула |
+| ------------- | ------------- |
+| Епанечникова	 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/k1.png" width="200">  |
+
+
 ## Метод потенциальных функций
 
 Ядро помещается в каждый обучающий объект <img src="https://github.com/temirkayaeva/ML0/raw/master/images/loo1.png" width="60">  и "притягивает" объект *u* к классу <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno6.png" width="16">, если он попадает в его окрестность радиуса <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions1.png" width="15">:
