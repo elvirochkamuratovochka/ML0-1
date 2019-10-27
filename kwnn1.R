@@ -41,7 +41,7 @@ kwNN <- function(xl, z, k, q)
    for(x in seq(1,7,0.1)){
     for(y in seq(0,2.5,0.1)){
     z <- c(x, y)
-    class <- kwNN(xl, z, k=7, q=0.8) 
+    class <- kwNN(xl, z, k=6, q=0.8) 
     points(z[1], z[2], pch = 1, col = colors[class], asp = 1)     
   } 
 }
