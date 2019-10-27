@@ -83,7 +83,7 @@
 
 **Пример, показывающий	преимущество	метода kwNN над KNN:**
 В данном примере k=7. 
-<img src="https://github.com/temirkayaeva/ML0/raw/master/images/7nn.png" width="450"><img src="https://github.com/temirkayaeva/ML0/raw/master/images/7wnn.png" width="450">  
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/7nn.png" width="420"><img src="https://github.com/temirkayaeva/ML0/raw/master/images/7wnn.png" width="420">  
 
 ## Метод парзеновского окна
 
