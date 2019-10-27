@@ -112,6 +112,8 @@
 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kerep.png" width="350">|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/mapkerep.png" width="540">
 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kerq.png" width="350">|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/mapkerq.png" width="540">
 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kerr.png" width="350">|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/mapkerr.png" width="540">
+| <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kert.png" width="350">|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/mapkert.png" width="540">
+| <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kerg.png" width="350">|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/mapkerg.png" width="540">
 
 
 ## Метод потенциальных функций
