@@ -100,6 +100,7 @@
 **Виды ядер** 
 
 | Ядро <img src="https://github.com/temirkayaeva/ML0/raw/master/images/k0.gif" width="30"> | Формула |
+| ------------- | ------------- |
 | Епанечникова	 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/k1.gif" width="200">  |
 | Квартическое	 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/k2.gif" width="200">  |
 | Треугольное	 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/k3.gif" width="180">  |
