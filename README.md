@@ -115,6 +115,11 @@
 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kert.png" width="350">|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/mapkert.png" width="540">
 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kerg.png" width="350">|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/mapkerg.png" width="540">
 
+### Сравнение методов
+
+На примере видно, что гауссовское ядро имеет преимущество, так как классифицирует все точки. В остальных ядрах точки, не попавшие в окна, не классифицируются (на картинках они имеют серый цвет).
+
+
 
 ## Метод потенциальных функций
 
