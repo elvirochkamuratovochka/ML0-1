@@ -109,8 +109,8 @@
 
 | Графики LOO  | Карты классификаций |
 | ------------- | ------------- |
-| <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kerep.png" width="300">|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/mapkerep.png" width="500">
-| <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kerq.png" width="300">|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/mapkerq.png" width="500">
+| <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kerep.png" width="350">|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/mapkerep.png" width="500">
+| <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kerq.png" width="350">|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/mapkerq.png" width="500">
 
 
 ## Метод потенциальных функций
