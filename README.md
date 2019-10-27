@@ -107,6 +107,10 @@
 | Гауссовское	 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/k4.gif" width="180">  |
 | Прямоугольное	 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/k5.gif" width="150">  |
 
+| Графики LOO  | Карты классификаций |
+| ------------- | ------------- |
+| <img src="https://github.com/temirkayaeva/ML0/raw/master/images/kerep.png" width="300">|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/mapkerep.png" width="450">
+
 
 ## Метод потенциальных функций
 
