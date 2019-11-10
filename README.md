@@ -167,6 +167,9 @@
 
 ## Нормальный дискриминантный анализ
 
-*Вероятностное распределение с плотностью*  <img src="http://1.618034.com/blog_data/math/formula.48016.png" width="400"> 
-называется n-мерным нормальным (гауссовским) распределением с вектором матожидания (центром) <img src="http://1.618034.com/./blog_data/math/formula.48017.png  width="150">  и ковариационной матрицей <img src="http://1.618034.com/./blog_data/math/formula.48019.png  width="150">
+*Вероятностное распределение с плотностью*  <img src="http://1.618034.com/blog_data/math/formula.48016.png" width="450"> 
+
+называется n-мерным нормальным (гауссовским) распределением с вектором матожидания (центром) 
+<img src="http://1.618034.com/blog_data/math/formula.48017.png  width="150">  и ковариационной матрицей 
+<img src="http://1.618034.com/blog_data/math/formula.48019.png  width="150">
 
