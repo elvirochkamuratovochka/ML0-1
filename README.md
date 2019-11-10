@@ -161,15 +161,19 @@
 
 **Оптимальное байесовское решающее правило**: 
 <img src="https://github.com/temirkayaeva/ML0/raw/master/images/baes.png" width="190">, где
-* <img src="https://github.com/temirkayaeva/ML0/raw/master/images/baes1.png" width="20">  - априорные вероятности  классов (вероятности появления объектов каждого из классов)
-* <img src="https://github.com/temirkayaeva/ML0/raw/master/images/baes2.png" width="30"> - функции правдоподобия классов (плотности распределения классов)
-* <img src="https://github.com/temirkayaeva/ML0/raw/master/images/baes3.png" width="20"> - величина потери.
+* <img src="https://github.com/temirkayaeva/ML0/raw/master/images/baes1.png" width="30">  - априорные вероятности  классов (вероятности появления объектов каждого из классов)
+* <img src="https://github.com/temirkayaeva/ML0/raw/master/images/baes2.png" width="35"> - функции правдоподобия классов (плотности распределения классов)
+* <img src="https://github.com/temirkayaeva/ML0/raw/master/images/baes3.png" width="30"> - величина потери.
 
 ## Нормальный дискриминантный анализ
 
-*Вероятностное распределение с плотностью*  <img src="http://1.618034.com/blog_data/math/formula.48016.png" width="450"> 
+*Вероятностное распределение с плотностью* 
+<img src="http://1.618034.com/blog_data/math/formula.48016.png" width="450"> 
+называется n-мерным нормальным (гауссовским) распределением с вектором матожидания (центром)  <img src="http://1.618034.com/blog_data/math/formula.48017.png" width="150">  и ковариационной матрицей  <img src="http://1.618034.com/blog_data/math/formula.48019.png" width="150">. Матрица Σ симметричная, невырожденная и положительно определённая. 
 
-называется n-мерным нормальным (гауссовским) распределением с вектором матожидания (центром) 
-<img src="http://1.618034.com/blog_data/math/formula.48017.png  width="150">  и ковариационной матрицей 
-<img src="http://1.618034.com/blog_data/math/formula.48019.png  width="150">
+**Геометрическая интерпретация нормальной плотности**. 
 
+* Если признаки некоррелированы, <img src="http://1.618034.com/blog_data/math/formula.48021.png" width="150">  то линии уровня плотности распределения имеют форму эллипсоидов с центром <img src="http://1.618034.com/blog_data/math/formula.23640.png" width="20"> и осями, параллельными линиям координат.
+* Если признаки имеют одинаковые дисперсии, <img src="http://1.618034.com/blog_data/math/formula.48022.png" width="150">, то эллипсоиды являются сферам. 
+* Если признаки коррелированы, то матрица <img src="http://1.618034.com/blog_data/math/formula.29578.png" width="20">  не диагональна и линии уровня имеют форму эллипсоидов, оси которых повёрнуты относительно исходной системы координат. 
+ 
