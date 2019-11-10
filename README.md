@@ -159,10 +159,10 @@
 Байесовский подход основан на теореме, утверждающей, что если плотности распределения каждого из классов известны, то искомый алгоритм можно выписать в явном аналитическом виде. На практике плотности распределения классов, как правило, не известны.
 Их приходится оценивать (восстанавливать) по обучающей выборке. Чтобы классифицировать точку, для начала, нужно вычислить функции правдоподобия каждого из классов, затем вычислить апостериорные вероятности классов. Классифицируемый объект относится к тому классу, у которого апостериорная вероятность максимальна.
 
-Оптимальное байесовское решающее правило: <img src="https://github.com/temirkayaeva/ML0/raw/master/images/baes.png" width="120">, где
-* <img src="https://github.com/temirkayaeva/ML0/raw/master/images/baes1.png" width="16">  - априорные вероятности  классов (вероятности появления объектов каждого из классов)
-* <img src="https://github.com/temirkayaeva/ML0/raw/master/images/baes2.png" width="16"> - функции правдоподобия классов (плотности распределения классов)
-* * <img src="https://github.com/temirkayaeva/ML0/raw/master/images/baes3.png" width="16"> - величина потери.
+Оптимальное байесовское решающее правило: <img src="https://github.com/temirkayaeva/ML0/raw/master/images/baes.png" width="180">, где
+* <img src="https://github.com/temirkayaeva/ML0/raw/master/images/baes1.png" width="20">  - априорные вероятности  классов (вероятности появления объектов каждого из классов)
+* <img src="https://github.com/temirkayaeva/ML0/raw/master/images/baes2.png" width="20"> - функции правдоподобия классов (плотности распределения классов)
+* * <img src="https://github.com/temirkayaeva/ML0/raw/master/images/baes3.png" width="20"> - величина потери.
 
 
 
