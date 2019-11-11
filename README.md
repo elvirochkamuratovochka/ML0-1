@@ -197,8 +197,10 @@
 ## Подстановочный алгоритм
 
 Параметры функций правдоподобия  <img src=" http://1.618034.com/blog_data/math/formula.48700.png" width="35"> и <img src=" http://1.618034.com/blog_data/math/formula.48701.png" width="35"> можно оценить по частям обучающей выборки для каждого класса y отдельно.
-<img src="http://1.618034.com/blog_data/math/formula.48704.png" width="300"> 
-Полученные выборочные оценки непосредственно подставляются в формулу <img src="http://1.618034.com/blog_data/math/formula.48706.png" width="180"> 
+
+<img src="http://1.618034.com/blog_data/math/formula.48704.png" width="400"> 
+
+Полученные выборочные оценки непосредственно подставляются в формулу <img src="http://1.618034.com/blog_data/math/formula.48706.png" width="200">. В результате получается алгоритм классификации, который так и называется — подстановочным (plug-in).
 
 
 
