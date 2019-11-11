@@ -172,15 +172,15 @@
 <img src="http://1.618034.com/blog_data/math/formula.48016.png" width="450"> 
 называется n-мерным нормальным (гауссовским) распределением с вектором матожидания (центром)  <img src="http://1.618034.com/blog_data/math/formula.48017.png" width="70">  и ковариационной матрицей  <img src="http://1.618034.com/blog_data/math/formula.48019.png" width="70">. Матрица Σ симметричная, невырожденная и положительно определённая. 
 
-|  случай 1 | случай 2 | случай 3 |
-| ------------- | ------------- | ------------- | 
-| <img src="https://github.com/temirkayaeva/ML0/raw/master/images/b2.png" width="280">|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/b1.png" width="280"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/b3.png" width="280">|
-
 **Геометрическая интерпретация нормальной плотности**. 
 
 * Если признаки некоррелированы, <img src="http://1.618034.com/blog_data/math/formula.48021.png" width="150">  то линии уровня плотности распределения имеют форму эллипсоидов с центром <img src="http://1.618034.com/blog_data/math/formula.23640.png" width="20"> и осями, параллельными линиям координат.
 * Если признаки имеют одинаковые дисперсии, <img src="http://1.618034.com/blog_data/math/formula.48022.png" width="70">, то эллипсоиды являются сферам. 
 * Если признаки коррелированы, то матрица <img src="http://1.618034.com/blog_data/math/formula.29578.png" width="20">  не диагональна и линии уровня имеют форму эллипсоидов, оси которых повёрнуты относительно исходной системы координат. 
+
+|  признаки некоррелированы | признаки имеют одинаковые дисперсии | признаки коррелированы |
+| ------------- | ------------- | ------------- | 
+| <img src="https://github.com/temirkayaeva/ML0/raw/master/images/b2.png" width="280">|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/b1.png" width="280"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/b3.png" width="280">|
 
 ## Наивный	нормальный байесовский	классификатор
 Допустим, что признаки <img src="http://1.618034.com/blog_data/math/formula.48025.png" width="90"> - независимые случайные величины с плотностями распределения, <img src="http://1.618034.com/blog_data/math/formula.48028.png" width="170">.
