@@ -172,6 +172,9 @@
 <img src="http://1.618034.com/blog_data/math/formula.48016.png" width="450"> 
 называется n-мерным нормальным (гауссовским) распределением с вектором матожидания (центром)  <img src="http://1.618034.com/blog_data/math/formula.48017.png" width="70">  и ковариационной матрицей  <img src="http://1.618034.com/blog_data/math/formula.48019.png" width="70">. Матрица Σ симметричная, невырожденная и положительно определённая. 
 
+|  случай 1 | случай 2 | случай 3|
+| <img src="https://github.com/temirkayaeva/ML0/raw/master/images/b2.png" width="300">|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/b1.png" width="300"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/b3.png" width="300">|
+
 **Геометрическая интерпретация нормальной плотности**. 
 
 * Если признаки некоррелированы, <img src="http://1.618034.com/blog_data/math/formula.48021.png" width="150">  то линии уровня плотности распределения имеют форму эллипсоидов с центром <img src="http://1.618034.com/blog_data/math/formula.23640.png" width="20"> и осями, параллельными линиям координат.
