@@ -78,5 +78,5 @@ coeffs <- get_coeffs(mu1, sigma1, mu2, sigma2)
 
 # Drawing of discriminant function
 x <- y <- seq(-10, 20, len = 100)
-z <- outer(x, y, function(x, y) coeffs["x^2"]*x^2 + coeffs["xy"]*x*y + coeffs["y^2"]*y^2 + coeffs["x"]*x + coeffs["y"]*y + coeffs["1"])
+z <- outer(x, y, function(x, y) coeffs["x^2"]*x^2 + coeffs["y^2"]*y^2 + coeffs["x*y"]*x*y + coeffs["x"]*x + coeffs["y"]*y + coeffs["1"])
 contour(x, y, z, levels = 0, drawlabels = FALSE, lwd = 2.5, col = "red", add = TRUE)
