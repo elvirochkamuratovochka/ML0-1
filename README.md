@@ -214,9 +214,12 @@
 
 * Если классы равновероятны и равнозначны, то разделяющая гиперплоскость проходит по середине между классами, ортогонально линии, соединяющей центры классов.
 
-<img src="https://github.com/temirkayaeva/ML0/raw/master/images/12.png" width="500">
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/12.png" width="600">
 
 
+* Если классы неравновероятны и неравнозначны, то гиперповерхность отодвигается дальше от более значимого класса. 
+
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/13.png" width="600">
 
 
 
