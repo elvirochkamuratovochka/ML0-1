@@ -238,10 +238,10 @@
 Этот алгоритм называется линейным дискриминантом Фишера (ЛДФ). 
 
 Разделяющая поверхность задается формулой: 
-<img src="http://1.618034.com/blog_data/math/formula.54531.png" width="110">, коэффициенты находятся по следующим формулам: 
+<img src="http://1.618034.com/blog_data/math/formula.54531.png" width="100">, коэффициенты находятся по следующим формулам: 
 
-<img src="http://1.618034.com/blog_data/math/formula.54532.png" width="110">
+<img src="http://1.618034.com/blog_data/math/formula.54532.png" width="150">
 
-<img src=" http://1.618034.com/blog_data/math/formula.54533.png" width="130">
+<img src="http://1.618034.com/blog_data/math/formula.54533.png" width="170">
 
 
