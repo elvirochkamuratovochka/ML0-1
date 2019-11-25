@@ -223,6 +223,6 @@
 
 Выбирая различные матрицы ковариации и центры для генерации тестовых данных, будем получать различные виды дискриминантной функции.
 
-<img src="https://github.com/temirkayaeva/ML0/raw/master/14.png" width="600"> <img src="https://github.com/temirkayaeva/ML0/raw/master/15.png" width="600">
+<img src="https://github.com/temirkayaeva/ML0/raw/master/17.png" width="600"> <img src="https://github.com/temirkayaeva/ML0/raw/master/15.png" width="600">
 
 
