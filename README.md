@@ -234,6 +234,14 @@
 
 В данном случае разделяющая поверхность является линейной, а ее коэффициенты находятся из оптимального байесовского решающего правила: 
 
-<img src="http://1.618034.com/blog_data/math/formula.54528.png" width="600">
+<img src="http://1.618034.com/blog_data/math/formula.54528.png" width="700">
 Этот алгоритм называется линейным дискриминантом Фишера (ЛДФ). 
+
+Разделяющая поверхность задается формулой: 
+<img src="http://1.618034.com/blog_data/math/formula.54531.png" width="110">, коэффициенты находятся по следующим формулам: 
+
+<img src="http://1.618034.com/blog_data/math/formula.54532.png" width="110">
+
+<img src=" http://1.618034.com/blog_data/math/formula.54533.png" width="130">
+
 
