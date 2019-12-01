@@ -213,8 +213,8 @@ m = 2 # количество классов
 n = 2 # - количество признаков
 scores =  rep(0, m) #вектор плотностей
 for (i in 1:m) {
-      k = -1/2*((t(x-myu)%*%solve(E))%*%(x-myu))/2
-      N = exp(k)/sqrt((2*pi)^n*det(E))
+      k = -1/2*((t(x-mu)%*%solve(Sigma))%*%(x-mu))/2
+      N = exp(k)/sqrt((2*pi)^n*det(Sigma))
       scores[i] = Py[i] * N
       }
   which.max(scores) #порядковый номер максимальной вероятности
