@@ -181,6 +181,34 @@
 * Если признаки имеют одинаковые дисперсии, <img src="http://1.618034.com/blog_data/math/formula.48022.png" width="70">, то эллипсоиды являются сферам. 
 * Если признаки коррелированы, то матрица <img src="http://1.618034.com/blog_data/math/formula.29578.png" width="20">  не диагональна и линии уровня имеют форму эллипсоидов, оси которых повёрнуты относительно исходной системы координат. 
 
+Получения коэффициентов дискриминантной функции: 
+
+```R
+	determ <-det(M)
+	
+	a <- M[2,2]/determ
+	b <- -M[2,1]/determ
+	c <- -M[1,2]/determ
+	d <- M[1,1]/determ
+	
+	m1 <- 0
+	m2 <- 0
+  
+	x <- seq(-3, 3, 0.1)
+	y <- seq(-3, 3, 0.1)
+	
+	A <- a
+	B <- d
+	C <- b+c
+	D <- -2*m1*a-b*m1-c*m1
+	E <- m1*b-y*m1*c-2*m2*d
+	F <- a*m1^2+b*m1*m2+m1*m2*c+m2^2*d
+	
+	func <- function(x, y) {
+    	1/(2*pi*sqrt(determ))*exp((-1/2)*(x^2*A + y^2*B + x*y*C + x*D + y*E + F))
+	}
+```
+
 |  признаки некоррелированы | признаки имеют одинаковые дисперсии | признаки коррелированы |
 | ------------- | ------------- | ------------- | 
 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/b2.png" width="280">|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/b1.png" width="280"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/b3.png" width="280">|
