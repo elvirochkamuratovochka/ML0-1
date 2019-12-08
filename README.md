@@ -332,7 +332,28 @@ get_coeffs <- function(mu1, sigma1, mu2, sigma2) {
 
 Для этого применим **метод стохастического градиента**.В этом методе выбирается некоторое начальное приближение для w, затем запускается итерационный процесс, на каждом шаге которого вектор w изменяется в направлении наиболее быстрого убывания функционала Q. Это направление противоположно направлению вектора градиента
 
-<img src="http://1.618034.com/blog_data/math/formula.56492.png" width="200">
-<img src="http://1.618034.com/blog_data/math/formula.56493.png" width="150">,  <img src="http://1.618034.com/blog_data/math/formula.56495.png" width="20"> - это **темп обучения**. 
+<img src="http://1.618034.com/blog_data/math/formula.56492.png" width="200">, <img src="http://1.618034.com/blog_data/math/formula.56493.png" width="150">, <img src="http://1.618034.com/blog_data/math/formula.56495.png" width="20"> - **темп обучения**. 
+
+Предположим, что функция L дифференцируема, и выпишем градиент: 
+<img src="http://1.618034.com/blog_data/math/formula.56499.png" width="350">.
+
+Инициализация весов может производиться различными способами. Cтандратный способ: взять небольшие случайные значения.
+
+<img src="http://1.618034.com/blog_data/math/formula.56501.png" width="300">.
+
+**Алгоритм SG:**
+
+**Вход**: <img src="http://1.618034.com/blog_data/math/formula.56503.png" width="25"> -  обуч. выборка, <img src="http://1.618034.com/blog_data/math/formula.56495.png" width="20"> - темп обучения, <img src="http://1.618034.com/blog_data/math/formula.13603.png" width="20"> - параметр сглаживания.
+
+**Выход**: веса <img src="http://1.618034.com/blog_data/math/formula.56504.png" width="100">.
+
+1. инициализировать веса <img src="http://1.618034.com/blog_data/math/formula.56504.png" width="100">.
+2. инициализировать текущую оценку функционала: 
+
+<img src="https://camo.githubusercontent.com/212214890c628ad501d943664cdad24ffb1129df/68747470733a2f2f6c617465782e636f6465636f67732e636f6d2f6769662e6c617465783f5125323877253243253230582535456c25323925323025334425323025354373756d5f25374269253230253344253230312537442535452537426c2537444c25323825334377253243253230785f69253345795f69253239" width="250">
+3. **повторять**
+
+
+
 
 
