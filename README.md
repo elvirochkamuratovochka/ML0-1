@@ -356,7 +356,24 @@ get_coeffs <- function(mu1, sigma1, mu2, sigma2) {
 5. вычислить ошибку алгоритма <img src="http://1.618034.com/blog_data/math/formula.56507.png" width="150">  
 6. сделать шаг градиентного спуcка <img src="http://1.618034.com/blog_data/math/formula.56499.png" width="350">
 7. оценить новое значение функционала <img src="http://1.618034.com/blog_data/math/formula.56508.png" width="200">
-8: **пока** значение Q не стабилизируется и/или веса w не перестанут изменятся
+8. **пока** значение Q не стабилизируется и/или веса w не перестанут изменятся
+
+**В зависимости от функции потерь, которая используется в функционале эмпирического риска, будем получать различные линейные алгоритмы классификации. ** 
 
 
 ## Адаптивный линейный элемент
+
+Возьмем квадратичную функцию потерь  <img src="http://1.618034.com/blog_data/math/formula.56509.png" width="200">, тогда 
+
+<img src="http://1.618034.com/blog_data/math/formula.56510.png" width="400"> (производная берется по w).
+
+ <img src="http://1.618034.com/blog_data/math/formula.56513.png" width="600">
+ 
+ получим правило обновления весов на каждой итерации метода стохастического градиента: <img src="http://1.618034.com/blog_data/math/formula.56515.png" width="400">
+ 
+ Это правило называется **дельта-правилом**, а сам линейный нейрон — **адаптивным линейным элементом (ADALINE)**. 
+ 
+ Пример работы алгоритма: 
+ 
+| <img src="https://github.com/temirkayaeva/ML0/raw/master/images/ada1.png" width="500"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/ada2.png" width="500"> |
+| ------------- | ------------- |
