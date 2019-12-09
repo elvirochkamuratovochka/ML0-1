@@ -399,3 +399,17 @@ get_coeffs <- function(mu1, sigma1, mu2, sigma2) {
  
 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/ada1.png" width="500"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/ada2.png" width="500"> |
 | ------------- | ------------- |
+
+
+## Правило Хэбба 
+
+Предполагаем, что классы могут быть помечены значениями +1, -1; а сам нейрон выдавать знак скалярного произведения: <img src="http://1.618034.com/blog_data/math/formula.56630.png" width="180"> 
+
+Тогда несовпадения знаков скалярного произведения и класса y, будет означать, что нейрон ошибся на объекте х. Тогда правило обновления весов принимает следующий вид: 
+
+<img src="http://1.618034.com/blog_data/math/formula.56633.png" width="400"> 
+
+Следовательно, в алгоритме стохастического градиента заменяется **шаг 6**.
+
+
+
