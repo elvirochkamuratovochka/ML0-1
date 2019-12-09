@@ -228,6 +228,29 @@
 
 Предположение о независимости существенно упрощает задачу, так как восстановление n одномерных плотностей намного более простая задача,  чем одной n-мерной. 
 
+```R
+naiv <- function(x, mu, sigma, P){
+	n <- 2
+	max <- -10000
+	for(k in 1:n){
+		res <- log(P)
+	
+		for(i in 1 : n){
+			pyj <- (1/(sigma[k,i]*sqrt(2*pi))) * exp(-1 * ((x[i] - mu[k,i])^2)/(2*sigma[k,i]^2))
+    		res <- res + log(pyj)
+		}
+		if(max < res){
+			max=res
+			class=k
+		}
+	}
+	return(class)
+}
+```
+
+Пример работы алгоритма: 
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/naive1.png" width="500">
+
 #### Достоинства
 
 * Простота вычислений 
