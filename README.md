@@ -248,7 +248,6 @@ naiv <- function(x, mu, sigma, P){
 }
 ```
 
-Пример работы алгоритма: 
 <img src="https://github.com/temirkayaeva/ML0/raw/master/images/naive1.png" width="500">
 
 #### Достоинства
