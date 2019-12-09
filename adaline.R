@@ -4,7 +4,7 @@ lossQuad <- function(x)
   return ((x-1)^2)
 } 
 
-#нормализация начальных данных
+#РЅРѕСЂРјР°Р»РёР·Р°С†РёСЏ РЅР°С‡Р°Р»СЊРЅС‹С… РґР°РЅРЅС‹С…
 trainingSampleNormalization <- function(xl) {
   n <- dim(xl)[2] - 1
   for (i in 1:n) {
@@ -13,33 +13,33 @@ trainingSampleNormalization <- function(xl) {
   return(xl)
 }
 
-# Добавление колонки из -1 для w0
+# Р”РѕР±Р°РІР»РµРЅРёРµ РєРѕР»РѕРЅРєРё РёР· -1 РґР»СЏ w0
 trainingSamplePrepare <- function(xl) {
   l <- dim(xl)[1]
   n <- dim(xl)[2] - 1
   xl <- cbind(xl[, 1:n], seq(from = -1, to = -1, length.out = l), xl[, n + 1])
 }
 
-# применяем метод стохастического градиента
+# РїСЂРёРјРµРЅСЏРµРј РјРµС‚РѕРґ СЃС‚РѕС…Р°СЃС‚РёС‡РµСЃРєРѕРіРѕ РіСЂР°РґРёРµРЅС‚Р°
 sg <- function(xl, eta = 0.2, lambda = 1/60) {
   l <- dim(xl)[1]
   n <- dim(xl)[2] - 1
   
-  # стандартная инициализация весов w
+  # СЃС‚Р°РЅРґР°СЂС‚РЅР°СЏ РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РІРµСЃРѕРІ w
   w <- c(1/2, 1/2, 1/2)
   
   iterCount <- 0
-  # определяем Q
+  # РѕРїСЂРµРґРµР»СЏРµРј Q
   Q <- 0
   for (i in 1:l) {
-    # вычисляем скалярное произведение <w,x>
+    # РІС‹С‡РёСЃР»СЏРµРј СЃРєР°Р»СЏСЂРЅРѕРµ РїСЂРѕРёР·РІРµРґРµРЅРёРµ <w,x>
     wx <- sum(w * xl[i, 1:n])
     margin <- wx * xl[i, n + 1]
     Q <- Q + lossQuad(margin)
   }
   repeat {
 
-      # случайным образом выбираем индекс из объектов ошибки
+      # СЃР»СѓС‡Р°Р№РЅС‹Рј РѕР±СЂР°Р·РѕРј РІС‹Р±РёСЂР°РµРј РёРЅРґРµРєСЃ РёР· РѕР±СЉРµРєС‚РѕРІ РѕС€РёР±РєРё
       i <- sample(1:l, 1)
       iterCount <- iterCount + 1
       xi <- xl[i, 1:n]
@@ -48,11 +48,11 @@ sg <- function(xl, eta = 0.2, lambda = 1/60) {
       wx <- crossprod(w, xi)
       margin <- wx * yi
       ex <- lossQuad(margin)
-      w <- w - eta * (wx - yi) * xi ##расчитываем градиентный шаг для итерации
+      w <- w - eta * (wx - yi) * xi ##СЂР°СЃС‡РёС‚С‹РІР°РµРј РіСЂР°РґРёРµРЅС‚РЅС‹Р№ С€Р°Рі РґР»СЏ РёС‚РµСЂР°С†РёРё
       
       Qprev <- Q
-      Q <- (1 - lambda) * Q + lambda * ex ##обновляем Q
-    ##  abline(a = w[3] / w[2], b = -w[1] / w[2],  col = "black")
+      Q <- (1 - lambda) * Q + lambda * ex ##РѕР±РЅРѕРІР»СЏРµРј Q
+      abline(a = w[3] / w[2], b = -w[1] / w[2],  col = "black")
  
       if(abs(Qprev - Q) < 1e-6) { 
       break
