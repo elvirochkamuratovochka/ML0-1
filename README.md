@@ -13,7 +13,8 @@
 * [Линейные алгоритмы классификации](https://github.com/temirkayaeva/ML0#линейные-алгоритмы-классификации)
     * [Метод стохастического градианта](https://github.com/temirkayaeva/ML0#метод-стохастического-градианта)
     * [Адаптивный линейный элемент](https://github.com/temirkayaeva/ML0#адаптивный-линейный-элемент)
-
+    * [Персептрон Розенблатта](https://github.com/temirkayaeva/ML0#персептрон-розенблатта)
+    * [Логистическая регрессия](https://github.com/temirkayaeva/ML0#логистическая-регрессия)
 
 # Метрические методы классификации
 
@@ -465,4 +466,7 @@ get_coeffs <- function(mu1, sigma1, mu2, sigma2) {
  
 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/habbs.png" width="500"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/habbs1.png" width="500"> |
 | ------------- | ------------- |
+
+
+## Логичестическая регрессия
 
