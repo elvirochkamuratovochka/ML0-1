@@ -267,6 +267,45 @@ naiv <- function(x, mu, sigma, P){
 
 Полученные выборочные оценки непосредственно подставляются в формулу оптимального байесовского классификатора <img src="http://1.618034.com/blog_data/math/formula.48706.png" width="200">. В результате получается алгоритм классификации, который так и называется — подстановочным (plug-in).
 
+```R
+plugin <- function(x,mus,sigmas,lymda,P)
+{
+  n <- 2
+  p <- rep(0,n)
+  for(i in 1:n)
+  {
+    sigma <- matrix(c(sigmas[i*2-1,1],sigmas[i*2-1,2],sigmas[i*2,1],sigmas[i*2,2]),2,2)
+    mu <- matrix(c(mus[i,1],mus[i,2]),1,2)
+    determ <-det(sigma)
+    a <- sigma[2,2]/determ
+    b <- -sigma[2,1]/determ
+    c <- -sigma[1,2]/determ
+    d <- sigma[1,1]/determ
+
+    F <-  - log(abs(det(sigma))) + mu[1]*mu[1]*a+(b+c)*mu[1]*mu[2]+d*mu[2]*mu[2]    
+    A <- a
+    B <- d
+    C <- b+c
+    D <- -2*mu[1]*a-2*mu[2]*b-mu[1]*c
+    E <- -mu[1]*b-mu[1]*c-d*2*mu[2]
+
+    func <- function(x, y) {
+      f <- x^2*A + y^2*B + x*y*C + x*D + y*E + F
+    }
+    f <- func(x[1],x[2])
+    p[i] <- log(l*P) - f
+  }
+  if(p[1] > p[2])
+  {
+    class <- colors[1]
+  }
+  else
+  {
+    class <- colors[2]
+  }
+  return(class)
+}
+```
 Разделяющая поверхность между двумя классами s и t задаётся следующим образом: 
 
 <img src="http://1.618034.com/blog_data/math/formula.52395.png" width="200">
@@ -302,18 +341,18 @@ get_coeffs <- function(mu1, sigma1, mu2, sigma2) {
 }
 ```
 
-* Если классы равновероятны и равнозначны (ковариационные матрицы
-равны, признаки некоррелированы и имеют одинаковые дисперсии), то разделяющая гиперплоскость проходит по середине между классами, ортогонально линии, соединяющей центры классов; классы имеют сферическую форму. 
+* Если классы равновероятны и равнозначны, ковариационные матрицы
+равны, признаки некоррелированы и имеют одинаковые дисперсии, то разделяющая гиперплоскость проходит по середине между классами, ортогонально линии, соединяющей центры классов; классы имеют сферическую форму.
 
-<img src="https://github.com/temirkayaeva/ML0/raw/master/images/12.png" width="600">
+* Если классы равновероятны и равнозначны, ковариационные матрицы
+равны, признаки некоррелированы и имеют одинаковые дисперсии, то разделяющая гиперплоскость проходит по середине между классами, ортогонально линии, соединяющей центры классов; классы имеют сферическую форму. 
 
 * Если ковариационные матрицы не диагональны и не равны, то разделяющая поверхность становится квадратичной и «прогибается» так, чтобы менее плотный класс «охватывал» более плотный.
 
-<img src="https://github.com/temirkayaeva/ML0/raw/master/images/16.png" width="600">
+| <img src="https://github.com/temirkayaeva/ML0/raw/master/images/12.png" width="600"> |  <img src="https://github.com/temirkayaeva/ML0/raw/master/images/16.png" width="600"> |
+| ------------- | ------------- |
+| <img src="https://github.com/temirkayaeva/ML0/raw/master/17.png" width="600"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/15.png" width="600"> |
 
-Выбирая различные матрицы ковариации и центры для генерации тестовых данных, будем получать различные виды дискриминантной функции.
-
-<img src="https://github.com/temirkayaeva/ML0/raw/master/17.png" width="600"> <img src="https://github.com/temirkayaeva/ML0/raw/master/15.png" width="600">
 
 ## Линейный дискриминант Фишера
 
