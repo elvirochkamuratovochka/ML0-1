@@ -27,20 +27,20 @@ get_matrix <- function(objects, mu) {
 coef <- function(mu1, sigma1, mu2, sigma2) {
   # Line equation: a*x1^2 + b*x1*x2 + c*x2 + d*x1 + e*x2 + f = 0
   # Inverse matrices
-
+  
   determ1 <-det(sigma1)
   determ2 <-det(sigma2)
   a <- sigma1[2,2]/determ1
   b <- -sigma1[2,1]/determ1
   c <- -sigma1[1,2]/determ1
   d <- sigma1[1,1]/determ1
-
+  
   determ1 <-det(sigma1)
   e <- sigma2[2,2]/determ2
   f <- -sigma2[2,1]/determ2
   m <- -sigma2[1,2]/determ2
   n <- sigma2[1,1]/determ2
-
+  
   F <-  - log(abs(det(sigma1))) + log(abs(det(sigma2))) + mu1[1]*mu1[1]*a+(b+c)*mu1[1]*mu1[2]+d*mu1[2]*mu1[2]-mu2[1]*mu2[1]*e-(f+m)*mu2[1]*mu2[2]-mu2[2]*n
   A <- a-e
   B <- d-n
@@ -63,19 +63,19 @@ plugin <- function(x,mus,sigmas,lymda,P)
     b <- -sigma[2,1]/determ
     c <- -sigma[1,2]/determ
     d <- sigma[1,1]/determ
-
+    
     F <-  - log(abs(det(sigma))) + mu[1]*mu[1]*a+(b+c)*mu[1]*mu[2]+d*mu[2]*mu[2]    
     A <- a
     B <- d
     C <- b+c
     D <- -2*mu[1]*a-2*mu[2]*b-mu[1]*c
     E <- -mu[1]*b-mu[1]*c-d*2*mu[2]
-
+    
     func <- function(x, y) {
       f <- x^2*A + y^2*B + x*y*C + x*D + y*E + F
     }
     f <- func(x[1],x[2])
-    p[i] <- log(l*P) - f
+    p[i] <- log(lymda*P) - f
   }
   if(p[1] > p[2])
   {
@@ -122,4 +122,17 @@ x <- y <- seq(-10, 20, len = 100)
 z <- outer(x, y, function(x, y) coeffs["x^2"]*x^2 + coeffs["y^2"]*y^2 + coeffs["xy"]*x*y + coeffs["x"]*x + coeffs["y"]*y + coeffs["1"])
 contour(x, y, z, levels = 0, drawlabels = FALSE, lwd = 2.5, col = "red", add = TRUE)
 
+x <- -10
+while(x < 40)
+{
+  y <- -10
+  while(y < 40)
+  {
+    xy <- c(x,y)
+    c <- plugin(xy,mu,sigma,lymda=1,P=0.5)
+    points(xy[1],xy[2], col=c)
+    y <- y+0.5
+  }
+  x <- x+0.5
+}
 
