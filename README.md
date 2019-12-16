@@ -282,19 +282,19 @@ plugin <- function(x,mus,sigmas,lymda,P)
     b <- -sigma[2,1]/determ
     c <- -sigma[1,2]/determ
     d <- sigma[1,1]/determ
-
+    
     F <-  - log(abs(det(sigma))) + mu[1]*mu[1]*a+(b+c)*mu[1]*mu[2]+d*mu[2]*mu[2]    
     A <- a
     B <- d
     C <- b+c
     D <- -2*mu[1]*a-2*mu[2]*b-mu[1]*c
     E <- -mu[1]*b-mu[1]*c-d*2*mu[2]
-
+    
     func <- function(x, y) {
       f <- x^2*A + y^2*B + x*y*C + x*D + y*E + F
     }
     f <- func(x[1],x[2])
-    p[i] <- log(l*P) - f
+    p[i] <- log(lymda*P) - f
   }
   if(p[1] > p[2])
   {
