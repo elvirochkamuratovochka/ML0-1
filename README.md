@@ -191,6 +191,10 @@
 
 В результате каждый класс будет представлен в Ω одним эталонным объектом и массой пограничных объектов, на которых отступ принимал наименьшие значения.
 
+**Результат работы алгоритма для kNN (k=6)** 
+
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/stolp1.png" width="1000">
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/stolp.png" width="1000">
 
 # Байесовские алгоритмы классификации
 
