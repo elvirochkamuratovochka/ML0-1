@@ -419,7 +419,7 @@ get_coeffs <- function(mu1, sigma1, mu2, sigma2) {
 ```R
 ldf <- function(xy,m,s,lambda,Py)
 {
-  n <- dim(mu)[2]
+  n <- 2
   p <- rep(0,n)
   for(i in 1:n) {
    mu <- matrix(c(m[i,1],m[i,2]),1,2)
