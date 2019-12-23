@@ -453,6 +453,7 @@ ldf <- function(xy,m,s,lambda,Py)
 
 |<img src="https://github.com/temirkayaeva/ML0/raw/master/images/ldf1.png" width="600"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/ldf2.png" width="600"> |
 | ------------- | ------------- |
+|<img src="https://github.com/temirkayaeva/ML0/raw/master/images/photoeditorsdk-export(2).png" width="600"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/photoeditorsdk-export(3).png" width="600"> |
 # Линейные методы классификации
 
 Рассмотрим задачу классификации с двумя классами <img src="http://1.618034.com/blog_data/math/formula.56462.png" width="100">. Модель алгоритмов — параметрическое семейство отображений вида  <img src="http://1.618034.com/blog_data/math/formula.56464.png" width="200">. где w — вектор параметров. Функция f(x,w) называется дискриминантной функцией. Если f(x, w) > 0, то алгоритм a относит объект x к классу +1, иначе к классу −1. Уравнение f(x, w) = 0 задает разделяющую поверхность.
