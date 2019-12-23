@@ -1,6 +1,15 @@
 library(MASS) # Generation of multidimensional normal distribution
 ObjectsCountOfEachClass <- 300
 
+getRisk <- function(mu1, mu2, sigma) {
+  tmp <- (-1/2)*((mu1 - mu2) %*% solve(sigma) %*% t(mu1 - mu2))
+  res <- standart(tmp, 0, 1)
+}
+standart <- function(x, mu, sigma){
+  return( (1/(sigma*sqrt(2*pi))) * exp(-(x - mu)^2/2*sigma^2) )
+}
+
+
 estimateFisherCovarianceMatrix <- function(objects1,
                                            objects2, mu1, mu2)
 {
@@ -39,7 +48,7 @@ estimateMu <- function(xl)
 Sigma1 <- matrix(c(2, 0, 0, 2), 2, 2)
 Sigma2 <- matrix(c(2, 0, 0, 2), 2, 2)
 Mu1 <- c(1, 0)
-Mu2 <- c(15, 0)
+Mu2 <- c(2, 0)
 xy1 <- mvrnorm(n=ObjectsCountOfEachClass, Mu1, Sigma1)
 xy2 <- mvrnorm(n=ObjectsCountOfEachClass, Mu2, Sigma2)
 
@@ -97,12 +106,11 @@ beta <- mu_st %*% alpha
 abline(beta / alpha[2,1], -alpha[1,1]/alpha[2,1], col = "red", lwd = 3)
 
 }
-
-x <- -10
-while(x < 40)
+x <- -5
+while(x < 9)
 {
-  y <- -10
-  while(y < 40)
+  y <- -5
+  while(y < 9)
   {
     xy <- c(x,y)
     c <- ldf(xy,mu,sigma,lambda=1,P=0.5)
@@ -111,7 +119,8 @@ while(x < 40)
   }
   x <- x+0.5
 }
-
-
 drawline(mu1,mu2,sigma)
+risk <- getRisk(mu1, mu2, sigma)
+print(sprintf("%s", risk))
+text(-1,4, sprintf("risk = %s", risk ))
 
