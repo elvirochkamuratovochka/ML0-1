@@ -416,6 +416,12 @@ get_coeffs <- function(mu1, sigma1, mu2, sigma2) {
 
 <img src="http://1.618034.com/blog_data/math/formula.54533.png" width="170">
 
+**Вероятность ошибки линейного дискриминанта Фишера** выражается через расстояние Махаланобиса между классами, в случае, когда классов два:
+
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/photoeditorsdk-export(4).png" width="500">
+
+
+
 ```R
 ldf <- function(xy,m,s,lambda,Py)
 {
