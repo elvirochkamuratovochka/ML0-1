@@ -416,6 +416,41 @@ get_coeffs <- function(mu1, sigma1, mu2, sigma2) {
 
 <img src="http://1.618034.com/blog_data/math/formula.54533.png" width="170">
 
+```R
+ldf <- function(xy,m,s,lambda,Py)
+{
+  n <- dim(mu)[2]
+  p <- rep(0,n)
+  for(i in 1:n) {
+   mu <- matrix(c(m[i,1],m[i,2]),1,2)
+   det <- det(sigma)
+   a <- sigma[2,2]/det
+   b <- -sigma[2,1]/det
+   c <- -sigma[1,2]/det
+   d <- sigma[1,1]/det
+
+   A <- -2*mu[1]*a-mu[2]*b-mu[2]*c #x
+   B <- -mu[1]*b-mu[2]*c-2*mu[2]*d #y
+   C <- a*mu[1]^2 + mu[1]*mu[2]*b+ mu[1]*mu[2]*c+ d*mu[2]^2
+    
+    func <- function(x, y) {
+      f<-x*A + y*B + C
+    }
+    f<-func(xy[1],xy[2])
+    p[i] <- log(lambda*Py) - f
+  }
+  if(p[1] > p[2])
+  {
+    class<-colors[1]
+  }
+  else
+  {
+    class<-colors[2]
+  }
+  return(class)
+}
+```
+
 |<img src="https://github.com/temirkayaeva/ML0/raw/master/images/ldf1.png" width="600"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/ldf2.png" width="600"> |
 | ------------- | ------------- |
 # Линейные методы классификации
