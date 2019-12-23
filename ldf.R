@@ -55,7 +55,7 @@ mu2 <- estimateMu(objectsOfSecondClass)
 sigma <- estimateFisherCovarianceMatrix(objectsOfFirstClass, objectsOfSecondClass, mu1, mu2)
 mu<-rbind(mu1,mu2)
 
-classifier <- function(xy,m,s,lambda,Py)
+ldf <- function(xy,m,s,lambda,Py)
 {
   n <- dim(mu)[2]
   p <- rep(0,n)
@@ -105,7 +105,7 @@ while(x < 40)
   while(y < 40)
   {
     xy <- c(x,y)
-    c <- classifier(xy,mu,sigma,lambda=1,P=0.5)
+    c <- ldf(xy,mu,sigma,lambda=1,P=0.5)
     points(xy[1],xy[2], col=c)
     y <- y+0.5
   }
