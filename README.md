@@ -592,3 +592,6 @@ ldf <- function(xy,m,s,lambda,Py)
 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/regress.png" width="500"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/regress1.png" width="500"> |
 | ------------- | ------------- |
 
+### Сравнение методов
+
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/all.png" width="600">
