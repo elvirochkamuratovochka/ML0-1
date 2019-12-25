@@ -39,7 +39,7 @@ plotWindows = function(h)
             } 
        }
 }
-plot(iris[, 3:4],main = "Гауссовское ядро", pch = 21, bg = colors[xl$Species], col = colors[xl$Species],asp='1')
+plot(iris[, 3:4],main = "ГѓГ ГіГ±Г±Г®ГўГ±ГЄГ®ГҐ ГїГ¤Г°Г®", pch = 21, bg = colors[xl$Species], col = colors[xl$Species],asp='1')
 plotWindows(h)
 colors = c("setosa" = "red", "versicolor" = "green", "virginica" = "blue", "0" = "0")
 xl <- iris[, 3:5] 
