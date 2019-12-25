@@ -402,7 +402,7 @@ get_coeffs <- function(mu1, sigma1, mu2, sigma2) {
 
 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/12.png" width="600"> |  <img src="https://github.com/temirkayaeva/ML0/raw/master/images/16.png" width="600"> |
 | ------------- | ------------- |
-| <img src="https://github.com/temirkayaeva/ML0/raw/master/17.png" width="600"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/15.png" width="600"> |
+| <img src="https://github.com/temirkayaeva/ML0/raw/master/images/17.png" width="600"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/15.png" width="600"> |
 | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/photoeditorsdk-export.png" width="600"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/photoeditorsdk-export(1).png" width="600"> |
 
 
