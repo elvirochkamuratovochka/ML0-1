@@ -597,7 +597,7 @@ ldf <- function(xy,m,s,lambda,Py)
  Пример работы алгоритма: 
  
   
-| <img src="https://github.com/temirkayaeva/ML0/raw/master/images/regress.png" width="500"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/reg.png" width="500"> |
+| <img src="https://github.com/temirkayaeva/ML0/raw/master/images/regress.png" width="500"> | <img src="https://github.com/temirkayaeva/ML0/raw/master/images/reg1.png" width="500"> |
 | ------------- | ------------- |
 
 ### Сравнение методов
