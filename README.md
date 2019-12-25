@@ -146,13 +146,21 @@
 
 **Идея метода**: если обучающий объект  <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions2.png" width="16"> классифицируется неверно, то потенциал класса <img src="https://github.com/temirkayaeva/ML0/raw/master/images/okno6.png" width="16"> недостаточен в точке <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions2.png" width="16">, и вес <img src="https://github.com/temirkayaeva/ML0/raw/master/images/pfunctions3.png" width="16"> увеличивается на единицу. 
 
+
+<img src="https://github.com/temirkayaeva/ML0/raw/master/images/pot.png" width="900">
+
+| Ядро Епанечникова | Ядро Треугольное |
+| ------------- | ------------- |
+|Ядро Прямоугольное| Ядро Гауссовское|
+
+
 #### Достоинства метода
 
 * Эффективность (когда обучающие объекты поступают потоком, и хранить их в памяти нет возможности или необходимости)
 
 #### Недостатки метода
 
-* Недленно сходится
+* Очень медленно сходится
 
 * Результат обучения зависит от порядка предъявления объектов
 
