@@ -35,7 +35,7 @@ xy2 <- mvrnorm(n = objects_count, mu2, sigma2)
 
 xl <- rbind(cbind(xy1, 1), cbind(xy2, 2))
 
-# Ðèñóåì îáó÷àþùóþ âûáîðêó
+# ÃÃ¨Ã±Ã³Ã¥Ã¬ Ã®Ã¡Ã³Ã·Ã Ã¾Ã¹Ã³Ã¾ Ã¢Ã»Ã¡Ã®Ã°ÃªÃ³
 colors <- c("blue2", "green3")
 plot(xl[ , 1], xl[ , 2], pch = 21, bg = colors[xl[ ,3]], asp = 1, xlab = "x", ylab = "y")
 
@@ -52,7 +52,7 @@ mu <- rbind(mu1,mu2)
 
 
 colors <- c("green3", "blue")
-plot(xl[,1],xl[,2], pch = 21,main = "Íàèâíûé áàéåñîâñêèé êëàññèôèêàòîð", col = colors[xl[,3]], asp = 1, bg=colors[xl[,3]])
+plot(xl[,1],xl[,2], pch = 21,main = "ÃÃ Ã¨Ã¢Ã­Ã»Ã© Ã¡Ã Ã©Ã¥Ã±Ã®Ã¢Ã±ÃªÃ¨Ã© ÃªÃ«Ã Ã±Ã±Ã¨Ã´Ã¨ÃªÃ Ã²Ã®Ã°", col = colors[xl[,3]], asp = 1, bg=colors[xl[,3]])
 
 naiv <- function(x,mus,sigmas,lambda,Py)
 {
