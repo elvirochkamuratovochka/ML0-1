@@ -52,7 +52,7 @@ mu <- rbind(mu1,mu2)
 
 
 colors <- c("green3", "blue")
-plot(xl[,1],xl[,2], pch = 21,main = "Íàèâíûé áàéåñîâñêèé êëàññèôèêàòîð", col = colors[xl[,3]], asp = 1, bg=colors[xl[,3]])
+plot(xl[,1],xl[,2], pch = 21,main = "tochki ", col = colors[xl[,3]], asp = 1, bg=colors[xl[,3]])
 
 naiv <- function(x,mus,sigmas,lambda,Py)
 {
